@@ -76,3 +76,12 @@ console.log(num1, num3);
 
 const { name } = person2;
 console.log(name);
+
+//Refreshing Array Functions
+
+const doubleNum = number.map((num) => {
+  return num * 2;
+});
+
+console.log(number);
+console.log(doubleNum);
