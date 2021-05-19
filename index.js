@@ -51,3 +51,20 @@ class Person2 extends Human2 {
 const person2 = new Person2();
 person2.printGender();
 person2.printName();
+
+//Spread | Rest
+
+const number = [1, 2, 3, 4, 5];
+const newNumber = [...number, 6];
+console.log(newNumber);
+
+const newPerson = {
+  ...person2,
+  age: 28,
+};
+console.log(newPerson);
+
+const filter = (...args) => {
+  return args.filter((el) => el === 1);
+};
+console.log(filter(1, 3, 4, 5));
